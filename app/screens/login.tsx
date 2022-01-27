@@ -3,8 +3,7 @@ import { Text, View, StyleSheet, TextInput, Button, Alert } from 'react-native';
 import { useForm, Controller } from 'react-hook-form';
 import { connect, useDispatch, useStore } from 'react-redux';
 
-import { loginData } from '../consts';
-import { loginRequest, signupRequest } from '../reducers/Auth/actions';
+import { loginRequest, signupRequest } from 'app/reducers/auth/actions';
 
 interface Props {}
 
@@ -127,7 +126,7 @@ const SigupForm: React.FC<{ setMode: Function }> = ({ setMode }) => {
     </>
   );
 };
-
+const loginData = []
 const LoginScreen: React.FC<Props> = () => {
   const loginForm = useForm({
     defaultValues: {
@@ -246,7 +245,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state: GlobalState) => {
   return {
-    sendNetworkFail: state.sendNetworkFail,
+    sendNetworkFail: state.network,
   };
 };
 
