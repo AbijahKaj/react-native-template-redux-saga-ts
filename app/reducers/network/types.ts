@@ -1,0 +1,4 @@
+export enum ActionType {
+    SEND_NETWORK_FAIL = 'SEND_NETWORK_FAIL',
+    CLEAR_NETWORK_FAIL = 'CLEAR_NETWORK_FAIL';
+}
