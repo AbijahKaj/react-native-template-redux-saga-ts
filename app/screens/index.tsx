@@ -17,10 +17,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './login';
 import { WithT, withTranslation } from 'app/utils/i18next';
 import { clearNetworkFail } from 'app/reducers/network';
-
-export type StackParamList = {
-  LoginScreen: undefined;
-};
+import { StackParamList } from './types';
 
 const Stack = createStackNavigator<StackParamList>();
 

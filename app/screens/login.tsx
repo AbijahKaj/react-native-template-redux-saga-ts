@@ -4,8 +4,14 @@ import { useForm, Controller } from 'react-hook-form';
 import { connect, useDispatch, useStore } from 'react-redux';
 
 import { loginRequest, signupRequest } from 'app/reducers/auth/actions';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RouteProp } from '@react-navigation/native';
+import { StackParamList } from './types';
 
-interface Props {}
+interface Props {
+  navigation: StackNavigationProp<StackParamList, 'LoginScreen'>
+  route: RouteProp<StackParamList, "LoginScreen">;
+}
 
 const SigupForm: React.FC<{ setMode: Function }> = ({ setMode }) => {
   const registerForm = useForm({
