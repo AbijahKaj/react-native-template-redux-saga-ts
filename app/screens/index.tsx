@@ -12,7 +12,7 @@ import { compose } from 'lodash/fp'
 
 import Toast from 'react-native-simple-toast';
 import { DarkTheme, NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import LoginScreen from './login';
 import { WithT, withTranslation } from 'app/utils/i18next';
@@ -22,7 +22,7 @@ export type StackParamList = {
   LoginScreen: undefined;
 };
 
-const Stack = createNativeStackNavigator<StackParamList>();
+const Stack = createStackNavigator<StackParamList>();
 
 interface Props {
   isLoggedIn: boolean;
