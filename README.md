@@ -13,8 +13,10 @@ This template contains everything needed to start a serious project.
 ## :arrow_forward: Usage
 
 ```sh
-npx react-native init MyApp --template https://github.com/AbijahKaj/rn-redux-saga-ts-template
+npx react-native init MyApp --template rn-redux-saga-ts-template
 ```
+
+Replace `MyApp` with your project's name.
 
 ## :warning: React Native CLI
 
@@ -23,3 +25,7 @@ This template only works with the new CLI. Make sure you have uninstalled the le
 If you tried the above and still get the react-native-template-react- native-template-typescript: Not found error, please try adding the `--ignore-existing` flag to [force npx to ignore](https://github.com/npm/npx#description) any locally installed versions of the CLI and use the latest.
 
 Further information can be found here: https://github.com/react-native-community/cli#about
+
+## :bookmark: License
+
+This project is [MIT](LICENSE) licensed.
