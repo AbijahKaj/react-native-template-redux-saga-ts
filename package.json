@@ -2,6 +2,9 @@
   "name": "rn-redux-saga-ts-template",
   "version": "1.0.1",
   "description": "React Native Redux Saga Typescript Template",
+  "scripts": {
+    "test": "exit 0"
+  },
   "files": [
     "template",
     "template.config.js"
