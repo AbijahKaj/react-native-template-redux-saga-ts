@@ -1,5 +1,5 @@
 {
-  "name": "rn-redux-saga-ts-template",
+  "name": "react-native-template-redux-saga-typescript",
   "version": "1.0.1",
   "description": "React Native Redux Saga Typescript Template",
   "scripts": {
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AbijahKaj/rn-redux-saga-ts-template.git"
+    "url": "git+https://github.com/AbijahKaj/react-native-template-redux-saga-typescript.git"
   },
   "author": "Abijah Kajabika <me@realabijah.com>",
   "license": "MIT",
