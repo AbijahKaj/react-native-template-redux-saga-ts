@@ -103,7 +103,9 @@ const RootScreenComponent: React.FC<Props & WithT> = props => {
   return (
     <View style={styles.mainContainer}>
       <NavigationContainer theme={DarkTheme}>
-        <Stack.Navigator headerMode={'none'}>
+        <Stack.Navigator screenOptions={{
+          headerShown: false
+        }}>
           {!props.isLoggedIn ? (
             <Stack.Screen name="LoginScreen" component={LoginScreen} />
           ) : (
