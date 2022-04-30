@@ -13,7 +13,7 @@ This template contains everything needed to start a serious project.
 ## :arrow_forward: Usage
 
 ```sh
-npx react-native init MyApp --template react-native-template-redux-saga-typescript
+npx react-native init MyApp --template react-native-template-redux-saga-ts
 ```
 
 Replace `MyApp` with your project's name.
