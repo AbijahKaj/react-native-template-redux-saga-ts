@@ -13,10 +13,13 @@ This template contains everything needed to start a serious project.
 ## :arrow_forward: Usage
 
 ```sh
-npx react-native init MyApp --template react-native-template-redux-saga-ts
+npx react-native init MyApp --template redux-saga-ts
 ```
 
 Replace `MyApp` with your project's name.
+
+It can take a lot of time to run, you might think that it's stuck at 
+`info Installing required CocoaPods dependencies` but you just have to wait.
 
 ## :warning: React Native CLI
 
