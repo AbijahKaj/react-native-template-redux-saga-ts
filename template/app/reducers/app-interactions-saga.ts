@@ -1,12 +1,6 @@
-import { eventChannel, END } from 'redux-saga'
 import {
-  // all,
-  call,
-  put,
   select,
-  take,
   takeLatest,
-  spawn,
 } from 'redux-saga/effects'
 import { FOREGROUND } from 'redux-enhancer-react-native-appstate'
 import { ActionType as authActions } from './auth'
@@ -23,7 +17,7 @@ function* onAppForeground() {
 }
 
 function* onRehydrate() {
-  const { auth } = yield select()
+  // const { auth } = yield select()
 }
 
 export function* appInteractionSagaWatcher() {
