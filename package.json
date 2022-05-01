@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-redux-saga-ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Native Redux Saga Typescript Template",
   "scripts": {
     "test": "exit 0"
