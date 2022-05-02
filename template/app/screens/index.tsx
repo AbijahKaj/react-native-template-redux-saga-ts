@@ -7,11 +7,9 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-
 import { compose } from 'lodash/fp'
-
 import Toast from 'react-native-simple-toast';
-import { DarkTheme, NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import LoginScreen from './login';
@@ -102,17 +100,11 @@ const RootScreenComponent: React.FC<Props & WithT> = props => {
 
   return (
     <View style={styles.mainContainer}>
-      <NavigationContainer theme={DarkTheme}>
+      <NavigationContainer>
         <Stack.Navigator screenOptions={{
           headerShown: false
         }}>
-          {!props.isLoggedIn ? (
-            <Stack.Screen name="LoginScreen" component={LoginScreen} />
-          ) : (
-            <>
-              
-            </>
-          )}
+          <Stack.Screen name="LoginScreen" component={LoginScreen} />
         </Stack.Navigator>
       </NavigationContainer>
       {state.isKeyboardShow && Platform.OS === 'ios' ? (
